@@ -1,0 +1,43 @@
+.bol {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: purple;
+    animation-name: movingBall;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    
+
+}
+@keyframes movingBall {
+    0% {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-color: purple;
+        transform: translate(0px,0px);
+    }
+    25% {
+        
+        background-color: red;
+        transform: translate(200px);
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 30px solid red;
+    }
+    50% {
+        height: 150px;
+        width: 150px;
+        background-color: orange;
+        transform: translate(200px,200px);
+        border-radius: 15px;
+    }
+    75% {
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+        transform: translate(0px,200px);
+    }
+} 
